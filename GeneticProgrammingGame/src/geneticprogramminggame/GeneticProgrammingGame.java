@@ -13,11 +13,27 @@ import javax.swing.*;
  */
 public class GeneticProgrammingGame {
 
+    private static void createAndShowGUI() {
+        JFrame frame = new JFrame("MAIN");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+ 
+        JLabel label = new JLabel("Genetic Programming");
+        frame.getContentPane().add(label);
+ 
+        frame.pack();
+        frame.setVisible(true);
+    }
+            
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        javax.swing.SwingUtilities.invokeLater(new Runnable() {
+            public void run() {
+                createAndShowGUI();
+            }
+        });
+
     }
     
 }
