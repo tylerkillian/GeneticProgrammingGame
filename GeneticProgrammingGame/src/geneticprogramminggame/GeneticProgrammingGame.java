@@ -12,7 +12,7 @@ import javax.swing.*;
  * @author tylerkillian
  */
 public class GeneticProgrammingGame {
-
+    
     private static void createAndShowGUI() {
         JFrame frame = new JFrame("MAIN");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
