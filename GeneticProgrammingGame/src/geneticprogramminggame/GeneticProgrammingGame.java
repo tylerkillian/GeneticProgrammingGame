@@ -5,6 +5,8 @@
  */
 package geneticprogramminggame;
 
+import javax.swing.*;
+
 /**
  *
  * @author tylerkillian
