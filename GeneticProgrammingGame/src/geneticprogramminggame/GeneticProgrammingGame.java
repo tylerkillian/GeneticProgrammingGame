@@ -20,7 +20,7 @@ public class GeneticProgrammingGame {
         JLabel label = new JLabel("Genetic Programming");
         frame.getContentPane().add(label);
  
-        frame.pack();
+        frame.setSize(800, 600);
         frame.setVisible(true);
     }
             
