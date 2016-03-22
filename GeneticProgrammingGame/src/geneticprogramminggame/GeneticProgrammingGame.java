@@ -22,7 +22,7 @@ public class GeneticProgrammingGame {
         frame.add(new GameScreen());
 
         frame.pack();
-        //frame.setSize(800, 600);
+        frame.setSize(800, 600);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
