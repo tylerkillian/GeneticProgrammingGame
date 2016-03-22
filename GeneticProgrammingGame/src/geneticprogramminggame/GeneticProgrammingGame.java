@@ -55,8 +55,8 @@ class GameScreen extends JPanel {
 
     public void paint(Graphics g) {
         Dimension screenSize = getSize();
-        int xSize = (int)(screenSize.getWidth() / (double)numXPixels);
-        int ySize = (int)(screenSize.getHeight() / (double)numYPixels);
+        double xSize = screenSize.getWidth() / (double)numXPixels;
+        double ySize = screenSize.getHeight() / (double)numYPixels;
         for (int xIdx = 0; xIdx < numXPixels; xIdx++) {
             for (int yIdx = 0; yIdx < numYPixels; yIdx++) {
                 int onOrOff = (xIdx + (yIdx % 2)) % 2;
