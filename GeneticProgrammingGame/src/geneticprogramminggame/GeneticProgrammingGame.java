@@ -6,6 +6,8 @@
 package geneticprogramminggame;
 
 import javax.swing.*;
+import java.awt.Color;
+import java.awt.Dimension;
 
 /**
  *
@@ -43,11 +45,11 @@ class GameScreen extends JPanel {
 
     public GameScreen() {
 
-        setBorder(BorderFactory.createLineBorder(Color.black));
+        setBorder(BorderFactory.createLineBorder(Color.red));
         
     }
     
     public Dimension getPreferredSize() {
-        return new Dimension(250,200);
+        return new Dimension(500,500);
     }
 }
