@@ -56,8 +56,8 @@ class GameScreen extends JPanel {
     public void paint(Graphics g) {
         g.setColor(Color.red);
         Dimension screenSize = getSize();
-        int xSize = screenSize.getWidth();
-        int ySize = screenSize.getHeight();
+        int xSize = (int)screenSize.getWidth();
+        int ySize = (int)screenSize.getHeight();
         for (int xIdx = 0; xIdx < numXPixels; xIdx++) {
             for (int yIdx = 0; yIdx < numYPixels; yIdx++) {
                 int x = xIdx * xSize;
