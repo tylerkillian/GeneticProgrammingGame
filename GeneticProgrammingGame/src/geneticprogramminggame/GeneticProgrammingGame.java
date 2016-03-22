@@ -13,11 +13,11 @@ import java.awt.*;
  * @author tylerkillian
  */
 public class GeneticProgrammingGame {
-    
+
     private static void createAndShowGUI() {
         JFrame frame = new JFrame("MAIN");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
- 
+
         frame.add(new GameScreen());
 
         frame.pack();
@@ -25,7 +25,7 @@ public class GeneticProgrammingGame {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
-            
+
     /**
      * @param args the command line arguments
      */
@@ -37,26 +37,35 @@ public class GeneticProgrammingGame {
         });
 
     }
-    
+
 }
 
 class GameScreen extends JPanel {
-    
+
     int numXPixels = 80;
     int numYPixels = 60;
 
     public GameScreen() {
 
         setBorder(BorderFactory.createLineBorder(Color.red));
-        
+
     }
-    
+
     public Dimension getPreferredSize() {
-        return new Dimension(800,600);
+        return new Dimension(800, 600);
     }
-    
+
     public void paint(Graphics g) {
-      g.setColor(Color.red);
-      g.fillRect(10, 10, 5, 5);
+        g.setColor(Color.red);
+        g.fillRect(10, 10, 5, 5);
+        Dimension screenSize = getSize();
+        double xSize = screenSize.getWidth();
+        double ySize = screenSize.getHeight();
+        for (int xIdx = 0; xIdx < numXPixels; xIdx++) {
+            for (int yIdx = 0; yIdx < numYPixels; yIdx++) {
+                double x = (double) xIdx * xSize;
+                double y = (double) yIdx * ySize;
+            }
+        }
     }
 }
