@@ -64,7 +64,7 @@ class GameScreen extends JPanel {
                 int x = xIdx * xSize;
                 int y = yIdx * ySize;
                 
-                if (onOrOff) {
+                if (onOrOff == 0) {
                     g.setColor(Color.red);
                 }
                 else {
