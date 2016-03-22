@@ -59,7 +59,7 @@ class GameScreen extends JPanel {
         int ySize = (int)screenSize.getHeight();
         for (int xIdx = 0; xIdx < numXPixels; xIdx++) {
             for (int yIdx = 0; yIdx < numYPixels; yIdx++) {
-                boolean onOrOff = (xIdx + (yIdx % 2)) % 2;
+                int onOrOff = (xIdx + (yIdx % 2)) % 2;
                 
                 int x = xIdx * xSize;
                 int y = yIdx * ySize;
