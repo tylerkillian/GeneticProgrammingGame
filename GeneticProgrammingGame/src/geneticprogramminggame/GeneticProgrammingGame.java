@@ -42,6 +42,9 @@ public class GeneticProgrammingGame {
 }
 
 class GameScreen extends JPanel {
+    
+    int numXPixels = 80;
+    int numYPixels = 60;
 
     public GameScreen() {
 
