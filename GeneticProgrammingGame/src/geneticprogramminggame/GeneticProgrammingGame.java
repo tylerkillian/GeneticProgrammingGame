@@ -60,9 +60,9 @@ class GameScreen extends JPanel {
         double ySize = screenSize.getHeight();
         for (int xIdx = 0; xIdx < numXPixels; xIdx++) {
             for (int yIdx = 0; yIdx < numYPixels; yIdx++) {
-                double x = (double) xIdx * xSize;
-                double y = (double) yIdx * ySize;
-                        g.fillRect(x, y, xSize, ySize);
+                double x = ((double) xIdx) * xSize;
+                double y = ((double) yIdx) * ySize;
+                g.fillRect(x, y, xSize, ySize);
             }
         }
     }
