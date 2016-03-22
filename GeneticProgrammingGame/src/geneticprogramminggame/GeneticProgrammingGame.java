@@ -54,4 +54,9 @@ class GameScreen extends JPanel {
     public Dimension getPreferredSize() {
         return new Dimension(800,600);
     }
+    
+    public void paint(Graphics g) {
+      g.setColor(Color.red);
+      g.fillRect(10, 10, 5, 5);
+    }
 }
