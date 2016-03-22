@@ -70,7 +70,7 @@ class GameScreen extends JPanel {
                 else {
                     g.setColor(Color.blue);
                 }
-                g.fillRect(x, y, xSize, ySize);
+                g.fillRect(x, y, (int)xSize, (int)ySize);
             }
         }
     }
