@@ -17,9 +17,9 @@ public class GeneticProgrammingGame {
         JFrame frame = new JFrame("MAIN");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
  
-        JLabel label = new JLabel("Genetic Programming");
-        frame.getContentPane().add(label);
- 
+        frame.add(new GameScreen());
+
+        frame.pack();
         frame.setSize(800, 600);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
@@ -37,4 +37,17 @@ public class GeneticProgrammingGame {
 
     }
     
+}
+
+class GameScreen extends JPanel {
+
+    public GameScreen() {
+
+        setBorder(BorderFactory.createLineBorder(Color.black));
+        
+    }
+    
+    public Dimension getPreferredSize() {
+        return new Dimension(250,200);
+    }
 }
