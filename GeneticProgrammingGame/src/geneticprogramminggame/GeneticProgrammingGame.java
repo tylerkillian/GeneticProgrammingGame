@@ -46,9 +46,7 @@ class GameScreen extends JPanel {
     int numYPixels = 60;
 
     public GameScreen() {
-
         setBorder(BorderFactory.createLineBorder(Color.red));
-
     }
 
     public Dimension getPreferredSize() {
