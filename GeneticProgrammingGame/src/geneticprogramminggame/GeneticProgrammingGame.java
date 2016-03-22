@@ -61,8 +61,11 @@ class GameScreen extends JPanel {
             for (int yIdx = 0; yIdx < numYPixels; yIdx++) {
                 int onOrOff = (xIdx + (yIdx % 2)) % 2;
                 
-                int x = (int)((double)xIdx * xSize);
-                int y = (int)((double)yIdx * ySize);
+                int x1 = (int)((double)xIdx * xSize);
+                int y1 = (int)((double)yIdx * ySize);
+
+                int x2 = (int)((double)(xIdx+1) * xSize);
+                int y2 = (int)((double)(yIdx+1) * ySize);
                 
                 if (onOrOff == 0) {
                     g.setColor(Color.red);
@@ -70,7 +73,7 @@ class GameScreen extends JPanel {
                 else {
                     g.setColor(Color.blue);
                 }
-                g.fillRect(x, y, (int)xSize, (int)ySize);
+                g.fillRect(x1, y1, x2-x1, y2-y1);
             }
         }
     }
