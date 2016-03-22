@@ -50,6 +50,6 @@ class GameScreen extends JPanel {
     }
     
     public Dimension getPreferredSize() {
-        return new Dimension(500,500);
+        return new Dimension(800,600);
     }
 }
