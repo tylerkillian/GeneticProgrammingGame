@@ -99,5 +99,7 @@ public class GameScreen extends JPanel {
 }
 
 public class GameController {
+    GameModel model;
+    GameView view;
 }
 }
