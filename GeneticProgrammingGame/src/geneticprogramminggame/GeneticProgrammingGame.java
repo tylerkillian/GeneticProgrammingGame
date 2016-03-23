@@ -32,6 +32,8 @@ public class GeneticProgrammingGame {
     public static void main(String[] args) {
         javax.swing.SwingUtilities.invokeLater(new Runnable() {
             public void run() {
+                GameModel gameModel = new GameModel();
+                GameController gameController = new GameController();
                 createAndShowGUI();
             }
         });
