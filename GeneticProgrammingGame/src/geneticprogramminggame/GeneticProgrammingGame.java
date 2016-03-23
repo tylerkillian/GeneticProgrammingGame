@@ -44,12 +44,24 @@ public class GeneticProgrammingGame {
 }
 
 public class GameModel {
-}
-
-public class GameScreen extends JPanel {
 
     int numXPixels = 80;
     int numYPixels = 60;
+    int pixelValues[numXPixels*numYPixels];
+
+    public GameModel() {
+        for (int xIdx = 0; xIdx < numXPixels; xIdx++) {
+            for (int yIdx = 0; yIdx < numYPixels; yIdx++) {
+                pixelValues[xIdx*numYPixels + yIdx] = 0;
+            }
+        }
+    }
+}
+
+public class GameScreen extends JPanel {
+    int numXPixels = 80;
+    int numYPixels = 60;
+
 
     public GameScreen() {
         setBorder(BorderFactory.createLineBorder(Color.red));
