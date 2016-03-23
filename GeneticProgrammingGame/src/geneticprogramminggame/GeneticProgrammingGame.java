@@ -97,3 +97,7 @@ public class GameScreen extends JPanel {
         }
     }
 }
+
+public class GameController {
+}
+}
