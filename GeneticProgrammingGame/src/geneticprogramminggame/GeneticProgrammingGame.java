@@ -47,9 +47,10 @@ public class GameModel {
 
     int numXPixels = 80;
     int numYPixels = 60;
-    int pixelValues[numXPixels*numYPixels];
+    int[] pixelValues;
 
     public GameModel() {
+        pixelValues = new int[numXPixels*numYPixels];
         for (int xIdx = 0; xIdx < numXPixels; xIdx++) {
             for (int yIdx = 0; yIdx < numYPixels; yIdx++) {
                 pixelValues[xIdx*numYPixels + yIdx] = 0;
