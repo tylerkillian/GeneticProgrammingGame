@@ -16,7 +16,7 @@ import javax.swing.JPanel;
  *
  * @author tylerkillian
  */
-public class GameView extends JPanel {
+public class GameView extends JFrame {
 
     GameController controller;
 
