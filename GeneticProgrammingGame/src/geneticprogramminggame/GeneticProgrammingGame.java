@@ -102,4 +102,3 @@ public class GameController {
     GameModel model;
     GameView view;
 }
-}
