@@ -20,4 +20,9 @@ public class GamePanel {
         this.controller = controller;
     }
     
+    public void paint(Graphics g)
+    {
+        
+    }
+    
 }
