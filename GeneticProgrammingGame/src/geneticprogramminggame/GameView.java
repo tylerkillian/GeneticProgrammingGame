@@ -41,9 +41,4 @@ public class GameView extends JFrame {
         this.controller = controller;
         this.gamePanel.AddListener(controller);
     }
-
-    public void paint(Graphics g) {
-        Dimension screenSize = getSize();
-        controller.paintView(screenSize, g);
-     }
 }
