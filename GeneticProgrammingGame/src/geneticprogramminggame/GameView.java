@@ -24,7 +24,8 @@ public class GameView extends JFrame {
     public GameView() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        add(new JPanel());
+        gamePanel = new JPanel;
+        add(gamePanel);
 
         pack();
         //frame.setSize(800, 600);
