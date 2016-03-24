@@ -21,7 +21,6 @@ public class GameView extends JFrame {
     GameController controller;
 
     public GameView() {
-        setBorder(BorderFactory.createLineBorder(Color.red));
                 JFrame frame = new JFrame("MAIN");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
