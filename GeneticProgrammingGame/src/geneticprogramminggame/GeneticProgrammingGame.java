@@ -63,6 +63,7 @@ public class GameScreen extends JPanel {
     int numXPixels = 80;
     int numYPixels = 60;
 
+    GameController
 
     public GameScreen() {
         setBorder(BorderFactory.createLineBorder(Color.red));
@@ -85,6 +86,7 @@ public class GameController {
     public GameController(GameModel model, GameView view) {
         this.model = model;
         this.view = view;
+        this.addListener(this);
     }
     
     public paintView(Dimension screenSize, Graphics g) {
