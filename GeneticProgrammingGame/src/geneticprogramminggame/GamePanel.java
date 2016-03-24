@@ -5,6 +5,8 @@
  */
 package geneticprogramminggame;
 
+import java.awt.Dimension;
+
 /**
  *
  * @author tylerkillian
@@ -22,7 +24,9 @@ public class GamePanel {
     
     public void paint(Graphics g)
     {
-        
+                Dimension screenSize = getSize();
+        controller.paintView(screenSize, g);
+
     }
     
 }
