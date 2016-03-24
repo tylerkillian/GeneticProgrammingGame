@@ -59,11 +59,11 @@ public class GameModel {
     }
 }
 
-public class GameScreen extends JPanel {
+public class GameView extends JPanel {
 
     GameController controller;
 
-    public GameScreen() {
+    public GameView() {
         setBorder(BorderFactory.createLineBorder(Color.red));
     }
 
