@@ -10,5 +10,8 @@ package geneticprogramminggame;
  * @author tylerkillian
  */
 public class GamePanel {
+    public GamePanel() {
+        
+    }
     
 }
