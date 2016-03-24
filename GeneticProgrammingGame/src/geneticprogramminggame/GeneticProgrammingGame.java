@@ -103,6 +103,7 @@ public class GameController {
     GameView view;
 
     public GameController(GameModel model, GameView view) {
-        
+        this.model = model;
+        this.view = view;
     }
 }
