@@ -24,7 +24,7 @@ public class GameView extends JFrame {
     public GameView() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        gamePanel = new JPanel;
+        gamePanel = new GamePanel();
         add(gamePanel);
 
         pack();
