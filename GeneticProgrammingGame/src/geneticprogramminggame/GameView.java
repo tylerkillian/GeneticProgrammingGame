@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import javax.swing.BorderFactory;
+import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 /**
@@ -21,6 +22,16 @@ public class GameView extends JPanel {
 
     public GameView() {
         setBorder(BorderFactory.createLineBorder(Color.red));
+                JFrame frame = new JFrame("MAIN");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        frame.add(new GameView());
+
+        frame.pack();
+        //frame.setSize(800, 600);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+
     }
 
     public Dimension getPreferredSize() {
