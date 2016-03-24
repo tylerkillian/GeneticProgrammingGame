@@ -24,13 +24,12 @@ public class GameView extends JFrame {
         JFrame frame = new JFrame("MAIN");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        frame.add(new GameView());
+        add(new JPanel());
 
-        frame.pack();
+        pack();
         //frame.setSize(800, 600);
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-
+        setLocationRelativeTo(null);
+        setVisible(true);
     }
 
     public Dimension getPreferredSize() {
