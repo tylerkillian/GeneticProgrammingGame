@@ -70,6 +70,10 @@ public class GameScreen extends JPanel {
     public Dimension getPreferredSize() {
         return new Dimension(800, 600);
     }
+    
+    public void AddListener(GameController controller) {
+        this.controller = controller;
+    }
 
     public void paint(Graphics g) {
         Dimension screenSize = getSize();
