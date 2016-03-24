@@ -10,8 +10,14 @@ package geneticprogramminggame;
  * @author tylerkillian
  */
 public class GamePanel {
+    GameController controller;
+    
     public GamePanel() {
         
+    }
+    
+    public void AddListener(GameController controller) {
+        this.controller = controller;
     }
     
 }
