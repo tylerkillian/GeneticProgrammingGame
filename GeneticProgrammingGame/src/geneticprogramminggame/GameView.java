@@ -19,7 +19,8 @@ import javax.swing.JPanel;
 public class GameView extends JFrame {
 
     GameController controller;
-
+    JPanel gamePanel;
+    
     public GameView() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
