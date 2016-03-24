@@ -22,7 +22,7 @@ public class GameController {
     public GameController(GameModel model, GameView view) {
         this.model = model;
         this.view = view;
-        this.view.addListener(this);
+        this.view.AddListener(this);
     }
     
     public void paintView(Dimension screenSize, Graphics g) {
