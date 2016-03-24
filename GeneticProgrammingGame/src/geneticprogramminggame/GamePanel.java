@@ -11,7 +11,7 @@ import java.awt.Dimension;
  *
  * @author tylerkillian
  */
-public class GamePanel {
+public class GamePanel extends JPanel {
     GameController controller;
     
     public GamePanel() {
