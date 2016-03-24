@@ -75,6 +75,19 @@ public class GameScreen extends JPanel {
     public void paint(Graphics g) {
         Dimension screenSize = getSize();
         controller.paintView(screenSize, g);
+     }
+}
+
+public class GameController {
+    GameModel model;
+    GameView view;
+
+    public GameController(GameModel model, GameView view) {
+        this.model = model;
+        this.view = view;
+    }
+    
+    public paintView(Dimension screenSize, Graphics g) {
         double xSize = screenSize.getWidth() / (double)numXPixels;
         double ySize = screenSize.getHeight() / (double)numYPixels;
         for (int xIdx = 0; xIdx < numXPixels; xIdx++) {
@@ -96,19 +109,6 @@ public class GameScreen extends JPanel {
                 g.fillRect(x1, y1, x2-x1, y2-y1);
             }
         }
-    }
-}
-
-public class GameController {
-    GameModel model;
-    GameView view;
-
-    public GameController(GameModel model, GameView view) {
-        this.model = model;
-        this.view = view;
-    }
-    
-    public paintView(Dimension screenSize, Graphics g) {
-        
+       
     }    
 }
