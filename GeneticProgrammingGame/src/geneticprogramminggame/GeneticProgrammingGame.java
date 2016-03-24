@@ -73,6 +73,7 @@ public class GameScreen extends JPanel {
     }
 
     public void paint(Graphics g) {
+        controller.paintView(screenSize, g);
         Dimension screenSize = getSize();
         double xSize = screenSize.getWidth() / (double)numXPixels;
         double ySize = screenSize.getHeight() / (double)numYPixels;
