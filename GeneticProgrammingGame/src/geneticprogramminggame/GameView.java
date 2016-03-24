@@ -21,7 +21,6 @@ public class GameView extends JFrame {
     GameController controller;
 
     public GameView() {
-        JFrame frame = new JFrame("MAIN");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         add(new JPanel());
