@@ -38,10 +38,5 @@ public class GeneticProgrammingGame {
                 //controller.updateView();
             }
         });
-
     }
-
 }
-
-
-
