@@ -35,7 +35,7 @@ public class GeneticProgrammingGame {
                 GameModel model = new GameModel();
                 GameView view = new GameView();
                 GameController controller = new GameController(model, view);
-                controller.updateView();
+                //controller.updateView();
             }
         });
 
