@@ -18,7 +18,7 @@ public class GeneticProgrammingGame {
         JFrame frame = new JFrame("MAIN");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        frame.add(new GameScreen());
+        frame.add(new GameView());
 
         frame.pack();
         //frame.setSize(800, 600);
@@ -93,7 +93,7 @@ public class GameController {
         this.view.addListener(this);
     }
     
-    public paintView(Dimension screenSize, Graphics g) {
+    public void paintView(Dimension screenSize, Graphics g) {
         double xSize = screenSize.getWidth() / (double)numXPixels;
         double ySize = screenSize.getHeight() / (double)numYPixels;
         for (int xIdx = 0; xIdx < numXPixels; xIdx++) {
