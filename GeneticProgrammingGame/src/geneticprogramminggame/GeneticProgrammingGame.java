@@ -90,7 +90,7 @@ public class GameController {
     public GameController(GameModel model, GameView view) {
         this.model = model;
         this.view = view;
-        this.addListener(this);
+        this.view.addListener(this);
     }
     
     public paintView(Dimension screenSize, Graphics g) {
