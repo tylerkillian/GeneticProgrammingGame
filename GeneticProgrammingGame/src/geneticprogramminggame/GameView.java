@@ -39,6 +39,7 @@ public class GameView extends JFrame {
     
     public void AddListener(GameController controller) {
         this.controller = controller;
+        this.gamePanel.AddListener(controller);
     }
 
     public void paint(Graphics g) {
