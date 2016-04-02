@@ -39,10 +39,10 @@ public class GameController {
                 int y2 = (int)((double)(yIdx+1) * ySize);
                 
                 if (onOrOff == 0) {
-                    g.setColor(Color.red);
+                    g.setColor(Color.BLACK);
                 }
                 else {
-                    g.setColor(Color.blue);
+                    g.setColor(Color.GRAY);
                 }
                 g.fillRect(x1, y1, x2-x1, y2-y1);
             }
