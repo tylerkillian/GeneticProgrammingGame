@@ -15,7 +15,7 @@ import java.awt.Graphics;
  */
 public class GamePanel extends JPanel {
     GameController controller;
-    boolean
+    boolean editable = true;
     
     public GamePanel() {
         
