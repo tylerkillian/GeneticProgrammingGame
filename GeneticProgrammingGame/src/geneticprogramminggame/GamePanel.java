@@ -15,6 +15,7 @@ import java.awt.Graphics;
  */
 public class GamePanel extends JPanel {
     GameController controller;
+    boolean
     
     public GamePanel() {
         
