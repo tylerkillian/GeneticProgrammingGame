@@ -8,6 +8,7 @@ package geneticprogramminggame;
 import javax.swing.JPanel;
 import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.event.MouseListener;
 
 /**
  *
@@ -18,7 +19,9 @@ public class GamePanel extends JPanel {
     boolean editable = true;
     
     public GamePanel() {
-        
+        addMouseListener(new MouseAdaptor() {
+            
+        });
     }
     
     public void AddListener(GameController controller) {
