@@ -22,6 +22,7 @@ public class GamePanel extends JPanel {
     public GamePanel() {
         addMouseListener(new MouseAdapter() {
             @Override
+            public void mousePressed()
         });
     }
     
