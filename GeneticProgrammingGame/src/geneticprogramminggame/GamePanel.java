@@ -8,7 +8,8 @@ package geneticprogramminggame;
 import javax.swing.JPanel;
 import java.awt.Dimension;
 import java.awt.Graphics;
-import java.awt.event.MouseListener;
+import java.awt.event.MouseAdaptor;
+import java.awt.event.MouseEvent;
 
 /**
  *
