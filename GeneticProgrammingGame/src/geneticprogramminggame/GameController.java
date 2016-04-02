@@ -17,8 +17,8 @@ public class GameController {
     GameModel model;
     GameView view;
 
-    int numXPixels = 80;
-    int numYPixels = 60;
+    int numXPixels = 40;
+    int numYPixels = 30;
     public GameController(GameModel model, GameView view) {
         this.model = model;
         this.view = view;
