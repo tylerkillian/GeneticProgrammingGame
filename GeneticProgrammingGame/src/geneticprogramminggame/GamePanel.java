@@ -29,6 +29,7 @@ public class GamePanel extends JPanel {
                 System.out.println("Location = " + clickX + " " + clickY + " of " + getWidth() + " " + getHeight());
                 
                 int xPixel = clickX / pixelWidth;
+                int yPixel = clickY / pixelHeight;
             }
         });
     }
