@@ -26,6 +26,13 @@ public class GameController {
         this.model = model;
         this.view = view;
         this.view.AddListener(this);
+
+        for (int xIdx = 0; xIdx < numXPixels; xIdx++) {
+            for (int yIdx = 0; yIdx < numYPixels; yIdx++) {
+                pixelValues[xIdx]
+            }
+        }
+
     }
 
     public void paintView(Dimension screenSize, Graphics g) {
