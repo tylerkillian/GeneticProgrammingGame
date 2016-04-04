@@ -24,12 +24,7 @@ public class GamePanel extends JPanel {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                int clickX = e.getX();
-                int clickY = e.getY();
-                System.out.println("Location = " + clickX + " " + clickY + " of " + getWidth() + " " + getHeight());
-                
-                int xPixel = clickX / pixelWidth;
-                int yPixel = clickY / pixelHeight;
+                controller.gamePanelClicked(e.getX(), e.getY());
             }
         });
     }
