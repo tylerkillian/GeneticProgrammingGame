@@ -28,7 +28,7 @@ public class GamePanel extends JPanel {
                 controller.gamePanelClicked(e.getX(), e.getY(), getWidth(), getHeight());
             }
         });
-        addMotionListener(new MouseMotionAdapter() {
+        addMouseMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseDragged(MouseEvent e) {
                 controller.gamePanelClicked(e.getX(), e.getY(), getWidth(), getHeight());
