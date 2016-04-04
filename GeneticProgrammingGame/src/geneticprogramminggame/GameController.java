@@ -29,7 +29,7 @@ public class GameController {
 
         for (int xIdx = 0; xIdx < numXPixels; xIdx++) {
             for (int yIdx = 0; yIdx < numYPixels; yIdx++) {
-                pixelValues[yIdx * numXPixels + xIdx] = (xIdx + (yIdx % 2)) % 2;
+                pixelValues[yIdx * numXPixels + xIdx] = 0; //(xIdx + (yIdx % 2)) % 2;
             }
         }
 
@@ -65,7 +65,7 @@ public class GameController {
         int xIdx = clickX / pixelWidth;
         int yIdx = clickY / pixelHeight;
         
-        pixelValues[yIdx * numXPixels + xIdx] = (pixelValues[yIdx * numXPixels + xIdx] + 1) % 2;
+        pixelValues[yIdx * numXPixels + xIdx] = 1; //(pixelValues[yIdx * numXPixels + xIdx] + 1) % 2;
         
         view.repaint();
     }
