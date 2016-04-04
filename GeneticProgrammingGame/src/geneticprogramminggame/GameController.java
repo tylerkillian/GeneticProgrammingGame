@@ -65,7 +65,7 @@ public class GameController {
         int xIdx = clickX / pixelWidth;
         int yIdx = clickY / pixelHeight;
         
-        pixelValues[yIdx * numXPixels + yIdx] = (pixelValues[yIdx * numXPixels + yIdx] + 1) % 2;
+        pixelValues[yIdx * numXPixels + xIdx] = (pixelValues[yIdx * numXPixels + xIdx] + 1) % 2;
         
         view.repaint();
     }
