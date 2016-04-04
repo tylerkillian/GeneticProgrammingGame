@@ -20,6 +20,7 @@ public class GameController {
 
     int numXPixels = 40;
     int numYPixels = 30;
+    pixelValues
 
     public GameController(GameModel model, GameView view) {
         this.model = model;
