@@ -67,7 +67,7 @@ public class GameController {
         
         pixelValues[yIdx * numXPixels + yIdx] = (pixelValues[yIdx * numXPixels + yIdx] + 1) % 2;
         
-        view.redraw();
+        view.repaint();
     }
 
 }
