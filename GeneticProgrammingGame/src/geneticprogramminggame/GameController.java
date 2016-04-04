@@ -52,6 +52,8 @@ public class GameController {
             int pixelWidth = panelWidth / numXPixels;
             int pixelHeight = panelHeight / numYPixels;
             int xPixel = clickX / pixelWidth;
+            int yPixel = clickY / pixelHeight;
+            System.out.println("Click pixel " + xPixel + " " + yPixel);
         }
        
     }    
