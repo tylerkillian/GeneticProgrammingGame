@@ -29,7 +29,7 @@ public class GameController {
 
         for (int xIdx = 0; xIdx < numXPixels; xIdx++) {
             for (int yIdx = 0; yIdx < numYPixels; yIdx++) {
-                pixelValues[xIdx]
+                pixelValues[yIdx * numXPixels + xIdx] = (xIdx + (yIdx % 2)) % 2;
             }
         }
 
@@ -40,7 +40,7 @@ public class GameController {
         double ySize = screenSize.getHeight() / (double) numYPixels;
         for (int xIdx = 0; xIdx < numXPixels; xIdx++) {
             for (int yIdx = 0; yIdx < numYPixels; yIdx++) {
-                int onOrOff = (xIdx + (yIdx % 2)) % 2;
+                int onOrOff = pixelValues[yIdx * numXPixels + xIdx];
 
                 int x1 = (int) ((double) xIdx * xSize);
                 int y1 = (int) ((double) yIdx * ySize);
