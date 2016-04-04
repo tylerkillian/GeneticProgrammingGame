@@ -9,6 +9,7 @@ import javax.swing.JPanel;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
+import java.awt.event.MouseMotionAdapter;
 import java.awt.event.MouseEvent;
 
 /**
@@ -26,16 +27,8 @@ public class GamePanel extends JPanel {
             public void mouseClicked(MouseEvent e) {
                 controller.gamePanelClicked(e.getX(), e.getY(), getWidth(), getHeight());
             }
-            @Override
-            public void mouseDragged(MouseEvent e) {
-                controller.gamePanelClicked(e.getX(), e.getY(), getWidth(), getHeight());
-            }
         });
-        addMouseListener(new MouseAdapter() {
-            @Override
-            public void mouseClicked(MouseEvent e) {
-                controller.gamePanelClicked(e.getX(), e.getY(), getWidth(), getHeight());
-            }
+        addMotionListener(new MouseMotionAdapter() {
             @Override
             public void mouseDragged(MouseEvent e) {
                 controller.gamePanelClicked(e.getX(), e.getY(), getWidth(), getHeight());
