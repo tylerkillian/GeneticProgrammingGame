@@ -47,6 +47,10 @@ public class GameController {
                 g.fillRect(x1, y1, x2-x1, y2-y1);
             }
         }
+        
+        public void gamePanelClicked(int x, int y) {
+            
+        }
        
     }    
 }
