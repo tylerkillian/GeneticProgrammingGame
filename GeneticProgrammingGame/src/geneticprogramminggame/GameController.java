@@ -18,9 +18,9 @@ public class GameController {
     GameModel model;
     GameView view;
 
-    int numXPixels = 40;
-    int numYPixels = 30;
-    pixelValues = new int[numXPixels*numYPixels];
+    final int numXPixels = 40;
+    final int numYPixels = 30;
+    int[] pixelValues = new int[numXPixels * numYPixels];
 
     public GameController(GameModel model, GameView view) {
         this.model = model;
