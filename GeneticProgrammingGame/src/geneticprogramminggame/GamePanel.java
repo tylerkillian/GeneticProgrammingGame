@@ -16,27 +16,26 @@ import java.awt.event.MouseEvent;
  * @author tylerkillian
  */
 public class GamePanel extends JPanel {
+
     GameController controller;
     boolean editable = true;
-    
+
     public GamePanel() {
         addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed() {
-                
+
             }
         });
     }
-    
+
     public void AddListener(GameController controller) {
         this.controller = controller;
     }
-    
-    public void paint(Graphics g)
-    {
-                Dimension screenSize = getSize();
-        controller.paintView(screenSize, g);
 
+    public void paint(Graphics g) {
+        Dimension screenSize = getSize();
+        controller.paintView(screenSize, g);
     }
-    
+
 }
