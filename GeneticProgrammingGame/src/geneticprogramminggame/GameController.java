@@ -65,6 +65,8 @@ public class GameController {
         int xPixel = clickX / pixelWidth;
         int yPixel = clickY / pixelHeight;
         System.out.println("Click pixel " + xPixel + " " + yPixel);
+        
+        pixelValues[yIdx * numXPixels + yIdx] = 
     }
 
 }
