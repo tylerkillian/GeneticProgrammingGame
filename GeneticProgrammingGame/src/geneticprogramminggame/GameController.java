@@ -48,8 +48,9 @@ public class GameController {
             }
         }
         
-        public void gamePanelClicked(int x, int y) {
-            
+        public void gamePanelClicked(int clickX, int clickY, int panelWidth, int panelHeight) {
+            int pixelWidth = panelWidth
+            int xPixel = clickX / pixelWidth;
         }
        
     }    
