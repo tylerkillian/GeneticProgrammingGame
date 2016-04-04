@@ -62,9 +62,8 @@ public class GameController {
     public void gamePanelClicked(int clickX, int clickY, int panelWidth, int panelHeight) {
         int pixelWidth = panelWidth / numXPixels;
         int pixelHeight = panelHeight / numYPixels;
-        int xPixel = clickX / pixelWidth;
-        int yPixel = clickY / pixelHeight;
-        System.out.println("Click pixel " + xPixel + " " + yPixel);
+        int xIdx = clickX / pixelWidth;
+        int yIdx = clickY / pixelHeight;
         
         pixelValues[yIdx * numXPixels + yIdx] = (pixelValues[yIdx * numXPixels + yIdx] + 1) % 2;
     }
