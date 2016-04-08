@@ -36,7 +36,7 @@ public class GameView extends JFrame {
         add(editErase);
         
         pack();
-        //frame.setSize(800, 600);
+        setSize(800, 600);
         setLocationRelativeTo(null);
         setVisible(true);
     }
