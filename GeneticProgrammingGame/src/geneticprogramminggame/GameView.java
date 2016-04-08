@@ -28,11 +28,12 @@ public class GameView extends JFrame {
         add(gamePanel);
 
         editChoices = new ButtonGroup();
-        editDraw = new JButton("Draw", false);
+        editDraw = new JButton("Draw", true);
         editChoices.add(editDraw);
-        editErase = new JButton();
+        add(editDraw);
+        editErase = new JButton("Erase", false);
         editChoices.add(editErase);
-        add(editChoices);
+        add(editErase);
         
         pack();
         //frame.setSize(800, 600);
