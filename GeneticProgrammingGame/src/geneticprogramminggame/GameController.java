@@ -64,12 +64,11 @@ public class GameController {
         int pixelHeight = panelHeight / numYPixels;
         int xIdx = clickX / pixelWidth;
         int yIdx = clickY / pixelHeight;
-        
+
         if (view.editDraw.isSelected()) {
-pixelValues[yIdx*numXPixels+xIdx] = 0;
-        }
-else {
-        pixelValues[yIdx * numXPixels + xIdx] = 1; //(pixelValues[yIdx * numXPixels + xIdx] + 1) % 2;
+            pixelValues[yIdx * numXPixels + xIdx] = 1;
+        } else { // Erase
+            pixelValues[yIdx * numXPixels + xIdx] = 0; //(pixelValues[yIdx * numXPixels + xIdx] + 1) % 2;
         }
         view.repaint();
     }
