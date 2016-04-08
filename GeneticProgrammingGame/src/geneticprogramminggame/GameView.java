@@ -36,6 +36,7 @@ public class GameView extends JFrame {
         editChoices.add(editErase);
         panel.add(editErase);
         
+        add(panel);
         pack();
         //setSize(800, 600);
         setLocationRelativeTo(null);
