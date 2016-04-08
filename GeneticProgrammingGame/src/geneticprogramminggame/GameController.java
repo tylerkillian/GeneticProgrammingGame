@@ -65,8 +65,10 @@ public class GameController {
         int xIdx = clickX / pixelWidth;
         int yIdx = clickY / pixelHeight;
         
+        if view.editDraw.isSelected() {
+            else
         pixelValues[yIdx * numXPixels + xIdx] = 1; //(pixelValues[yIdx * numXPixels + xIdx] + 1) % 2;
-        
+        }
         view.repaint();
     }
 
