@@ -26,12 +26,12 @@ public class GameView extends JFrame {
 
         JPanel panel = new JPanel();
         gamePanel = new GamePanel();
-        add(gamePanel);
+        panel.add(gamePanel);
 
         editChoices = new ButtonGroup();
         editDraw = new JRadioButton("Draw", true);
         editChoices.add(editDraw);
-        add(editDraw);
+        panel.add(editDraw);
         editErase = new JRadioButton("Erase", false);
         editChoices.add(editErase);
         add(editErase);
