@@ -67,7 +67,8 @@ public class GameController {
         
         if (view.editDraw.isSelected()) {
 pixelValues[yIdx*numXPixels+xIdx] = 0;
-            else
+        }
+else {
         pixelValues[yIdx * numXPixels + xIdx] = 1; //(pixelValues[yIdx * numXPixels + xIdx] + 1) % 2;
         }
         view.repaint();
