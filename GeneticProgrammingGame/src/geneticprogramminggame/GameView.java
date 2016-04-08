@@ -34,10 +34,10 @@ public class GameView extends JFrame {
         panel.add(editDraw);
         editErase = new JRadioButton("Erase", false);
         editChoices.add(editErase);
-        add(editErase);
+        panel.add(editErase);
         
         pack();
-        setSize(800, 600);
+        //setSize(800, 600);
         setLocationRelativeTo(null);
         setVisible(true);
     }
