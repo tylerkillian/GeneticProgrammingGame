@@ -9,6 +9,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import javax.swing.BorderFactory;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
@@ -18,6 +19,8 @@ import javax.swing.JPanel;
  */
 public class GameView extends JFrame {
 
+    ButtonGroup editChoices;
+    JButton editDraw, editErase;
     GameController controller;
     GamePanel gamePanel;
     
@@ -27,6 +30,13 @@ public class GameView extends JFrame {
         gamePanel = new GamePanel();
         add(gamePanel);
 
+        editChoices = new ButtonGroup();
+        editDraw = new JButton();
+        editChoices.add(editDraw);
+        editErase = new JButton();
+        editChoices.add(editErase);
+        add(editChoices);
+        
         pack();
         //frame.setSize(800, 600);
         setLocationRelativeTo(null);
