@@ -17,7 +17,7 @@ import javax.swing.*;
 public class GameView extends JFrame {
 
     ButtonGroup editChoices;
-    JButton editDraw, editErase;
+    JRadioButton editDraw, editErase;
     GameController controller;
     GamePanel gamePanel;
     
@@ -28,10 +28,10 @@ public class GameView extends JFrame {
         add(gamePanel);
 
         editChoices = new ButtonGroup();
-        editDraw = new JButton("Draw", true);
+        editDraw = new JRadioButton("Draw", true);
         editChoices.add(editDraw);
         add(editDraw);
-        editErase = new JButton("Erase", false);
+        editErase = new JRadioButton("Erase", false);
         editChoices.add(editErase);
         add(editErase);
         
