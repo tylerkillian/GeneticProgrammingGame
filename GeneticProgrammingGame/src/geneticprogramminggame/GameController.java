@@ -32,8 +32,8 @@ public class GameController {
                 pixelValues[yIdx * numXPixels + xIdx] = 0; //(xIdx + (yIdx % 2)) % 2;
             }
         }
-        pixelValues[(numYPixels-1)*numXPixels + (numXPixels-1)] = 2;
-
+        pixelValues[(numYPixels - 1) * numXPixels] = 2;
+        pixelValues[(numYPixels - 1) * numXPixels + 1] = 3;
     }
 
     public void paintView(Dimension screenSize, Graphics g) {
