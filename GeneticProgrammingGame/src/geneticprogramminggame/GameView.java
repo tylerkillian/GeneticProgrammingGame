@@ -50,7 +50,7 @@ public class GameView extends JFrame {
     }
 
     public Dimension getPreferredSize() {
-        return new Dimension(800, 600);
+        return new Dimension(600, 600);
     }
     
     public void AddListener(GameController controller) {
