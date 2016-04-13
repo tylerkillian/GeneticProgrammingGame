@@ -87,7 +87,7 @@ public class GameController {
                 pixelValues[yIdx * numXPixels + xIdx] = 2;
                 startIdx = yIdx * numXPixels + xIdx;
             }
-        } else if ((pixelValues[yIdx * numXPixels + xIdx] != 1) && (pixelValues[yIdx * numXPixels + xIdx] != 2)) {
+        } else if ((pixelValues[yIdx * numXPixels + xIdx] != 1) && (pixelValues[yIdx * numXPixels + xIdx] != 2)) { // Place finish
             pixelValues[finishIdx] = 0;
             pixelValues[yIdx * numXPixels + xIdx] = 3;
             finishIdx = yIdx * numXPixels + xIdx;
