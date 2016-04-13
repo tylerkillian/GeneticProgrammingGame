@@ -78,7 +78,9 @@ public class GameController {
                 pixelValues[yIdx * numXPixels + xIdx] = 1;
             }
         } else { // Erase
+        if (((yIdx * numXPixels + xIdx) != startIdx) && ((yIdx * numXPixels + xIdx) != finishIdx)) {
             pixelValues[yIdx * numXPixels + xIdx] = 0; //(pixelValues[yIdx * numXPixels + xIdx] + 1) % 2;
+        }
         }
         view.repaint();
     }
