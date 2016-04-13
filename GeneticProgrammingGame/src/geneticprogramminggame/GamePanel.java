@@ -37,7 +37,7 @@ public class GamePanel extends JPanel {
     }
 
     public Dimension getPreferredSize() {
-        return new Dimension(400, 300);
+        return new Dimension(600, 450);
     }
 
     public void AddListener(GameController controller) {
