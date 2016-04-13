@@ -32,6 +32,7 @@ public class GameController {
                 pixelValues[yIdx * numXPixels + xIdx] = 0; //(xIdx + (yIdx % 2)) % 2;
             }
         }
+        pixelValues[(numYPixels-1)*numXPixels + (numXPixels-1)] = 2;
 
     }
 
