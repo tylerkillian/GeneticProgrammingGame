@@ -87,6 +87,13 @@ public class GameController {
                 pixelValues[yIdx * numXPixels + xIdx] = 2;
                 startIdx = yIdx * numXPixels + xIdx;
             }
+        } else {
+                  if ((pixelValues[yIdx * numXPixels + xIdx] != 1) && (pixelValues[yIdx * numXPixels + xIdx] != 3)) {
+                pixelValues[startIdx] = 0;
+                pixelValues[yIdx * numXPixels + xIdx] = 2;
+                startIdx = yIdx * numXPixels + xIdx;
+            }
+     
         }
         view.repaint();
     }
