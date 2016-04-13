@@ -83,6 +83,8 @@ public class GameController {
             }
         } else if (view.editStart.isSelected()) {// Place start
             if ((pixelValues[yIdx * numXPixels + xIdx] != 1) && (pixelValues[yIdx * numXPixels + xIdx] != 3)) {
+                pixelValues[Idx] = 0;
+                startIdx = yIdx * numXPixels + xIdx;
                 pixelValues[yIdx * numXPixels + xIdx] = 2;
             }
         }
