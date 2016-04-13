@@ -50,7 +50,13 @@ public class GameController {
 
                 if (onOrOff == 0) {
                     g.setColor(Color.BLACK);
-                } else {
+                } else if (onOrOff == 1) {
+                
+                } else if (onOrOff == 1) {
+                
+                } else if (onOrOff == 1) {
+                }
+                    else {
                     g.setColor(Color.GRAY);
                 }
                 g.fillRect(x1, y1, x2 - x1, y2 - y1);
