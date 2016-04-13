@@ -48,14 +48,14 @@ public class GameController {
                 int x2 = (int) ((double) (xIdx + 1) * xSize);
                 int y2 = (int) ((double) (yIdx + 1) * ySize);
 
-                if (onOrOff == 0) {
+                if (onOrOff == 0) { // Blank pixel
                     g.setColor(Color.BLACK);
-                } else if (onOrOff == 1) {
-                
-                } else if (onOrOff == 2) {
-                
-                }   else {
+                } else if (onOrOff == 1) { // Filled-in pixel
                     g.setColor(Color.GRAY);
+                } else if (onOrOff == 2) { // Starting point
+                    g.setColor(Color.BLUE);
+                } else { // Ending point
+                    g.setColor(Color.RED);
                 }
                 g.fillRect(x1, y1, x2 - x1, y2 - y1);
             }
