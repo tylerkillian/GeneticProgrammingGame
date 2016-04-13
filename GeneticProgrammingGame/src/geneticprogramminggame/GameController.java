@@ -21,6 +21,7 @@ public class GameController {
     final int numXPixels = 40;
     final int numYPixels = 30;
     int[] pixelValues = new int[numXPixels * numYPixels];
+    int startIdx = -1, finishIdx = -1;
 
     public GameController(GameModel model, GameView view) {
         this.model = model;
@@ -33,7 +34,9 @@ public class GameController {
             }
         }
         pixelValues[(numYPixels - 1) * numXPixels] = 2;
+        startIdx = (numYPixels - 1) * numXPixels;
         pixelValues[(numYPixels - 1) * numXPixels + 1] = 3;
+        finishIdx = (numYPixels - 1) * numXPixels + 1;
     }
 
     public void paintView(Dimension screenSize, Graphics g) {
